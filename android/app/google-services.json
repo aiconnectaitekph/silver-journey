@@ -1,0 +1,319 @@
+{
+  "project_info": {
+    "project_number": "882839078564",
+    "firebase_url": "https://potent-bulwark-434423-t6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "potent-bulwark-434423-t6",
+    "storage_bucket": "potent-bulwark-434423-t6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:bb99a4b5b0de0ce604c831",
+        "android_client_info": {
+          "package_name": "com.aiconnect.alex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-qcpfiirv7i69gdjd5f9bh0k9klmnik0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aiconnect.alex",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:8bc2929d37c60c1604c831",
+        "android_client_info": {
+          "package_name": "com.listtable.prime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-8tudjdqia9j39vnhj2c7nef2tp39qqb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.listtable.prime",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:ffb65f6f369caad404c831",
+        "android_client_info": {
+          "package_name": "com.merchant.prosperityprimeglobal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-0qtiiao49a3dc0aulihd70vg7p8838tg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merchant.prosperityprimeglobal",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:a61cf102f0b9281704c831",
+        "android_client_info": {
+          "package_name": "com.minimov.kmovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-82a4c4lssdd27jp5vp8t4vf5a87bdd3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minimov.kmovie",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:fc4de12047f24d1404c831",
+        "android_client_info": {
+          "package_name": "com.prime.merchantsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-k24bjhkka4lslhsnfhb9gttaq13l72v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prime.merchantsapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:161a00d7585bcfc204c831",
+        "android_client_info": {
+          "package_name": "com.primemaps.merchants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-b39pba8jdkfj0hrhee2nqifparvd6dg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.primemaps.merchants",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882839078564:android:de7ffce28ccdc3d904c831",
+        "android_client_info": {
+          "package_name": "com.prosperityprime.merchantsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882839078564-npop2941ikf57a6u0fu4v5kcbcbuvp4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prosperityprime.merchantsapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "882839078564-dn4gj4hlbr8njn8tvckigqimlv9kf2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQHNbeQLr8kgRE_z4b1XgSeT7W4qarLH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105180449116955348499",
+              "client_type": 3
+            },
+            {
+              "client_id": "882839078564-cb6sc58bo25tc0n4oo4eveupsipu45vk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.primemaps.merchants"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
