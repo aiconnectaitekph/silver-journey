@@ -105,11 +105,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const RegisterScreenWidget(),
         ),
         FFRoute(
-          name: 'APIKeyScreen',
-          path: '/aPIKeyScreen',
-          builder: (context, params) => const APIKeyScreenWidget(),
-        ),
-        FFRoute(
           name: 'HistoryScreen',
           path: '/historyScreen',
           builder: (context, params) => params.isEmpty

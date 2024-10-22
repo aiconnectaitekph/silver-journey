@@ -263,7 +263,7 @@ class _ThreadScreenWidgetState extends State<ThreadScreenWidget> {
                                         () async {
                                           _model.hasValue =
                                               functions.checkValue(_model
-                                                  .promptTextController.text)!;
+                                                  .promptTextController.text);
                                           safeSetState(() {});
                                         },
                                       ),
@@ -367,8 +367,7 @@ class _ThreadScreenWidgetState extends State<ThreadScreenWidget> {
                                             highlightColor: Colors.transparent,
                                             onTap: () async {
                                               if (functions.checkValue(_model
-                                                  .promptTextController
-                                                  .text)!) {
+                                                  .promptTextController.text)) {
                                                 _model.isLoading = true;
                                                 _model.addToChatData(
                                                     ChatModelStruct(

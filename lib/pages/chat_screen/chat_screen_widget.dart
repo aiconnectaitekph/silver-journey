@@ -1,14 +1,10 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/components/page_bg_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'chat_screen_model.dart';
 export 'chat_screen_model.dart';
 
@@ -28,20 +24,6 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ChatScreenModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (!(valueOrDefault(currentUserDocument?.apiKey, '') != '')) {
-        context.goNamed('APIKeyScreen');
-      }
-
-      var historyRecordReference = HistoryRecord.collection.doc(currentUserUid);
-      await historyRecordReference.set(createHistoryRecordData());
-      _model.historyRef = HistoryRecord.getDocumentFromData(
-          createHistoryRecordData(), historyRecordReference);
-      FFAppState().historyReference = _model.historyRef?.reference;
-      safeSetState(() {});
-    });
   }
 
   @override
@@ -53,8 +35,6 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(

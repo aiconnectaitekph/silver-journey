@@ -615,16 +615,9 @@ class _RegisterScreenWidgetState extends State<RegisterScreenWidget> {
                                       if (user == null) {
                                         return;
                                       }
-                                      if (valueOrDefault(
-                                                  currentUserDocument?.apiKey,
-                                                  '') ==
-                                              '') {
-                                        context.pushNamedAuth(
-                                            'APIKeyScreen', context.mounted);
-                                      } else {
-                                        context.pushNamedAuth(
-                                            'ChatScreen', context.mounted);
-                                      }
+
+                                      context.goNamedAuth(
+                                          'ChatScreen', context.mounted);
                                     },
                                   ),
                                   FlutterFlowIconButton(
@@ -648,16 +641,9 @@ class _RegisterScreenWidgetState extends State<RegisterScreenWidget> {
                                       if (user == null) {
                                         return;
                                       }
-                                      if (valueOrDefault(
-                                                  currentUserDocument?.apiKey,
-                                                  '') ==
-                                              '') {
-                                        context.pushNamedAuth(
-                                            'APIKeyScreen', context.mounted);
-                                      } else {
-                                        context.pushNamedAuth(
-                                            'ChatScreen', context.mounted);
-                                      }
+
+                                      context.goNamedAuth(
+                                          'ChatScreen', context.mounted);
                                     },
                                   ),
                                   FlutterFlowIconButton(

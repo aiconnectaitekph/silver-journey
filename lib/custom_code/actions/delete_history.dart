@@ -10,12 +10,5 @@ import 'package:flutter/material.dart';
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
 Future deleteHistory(String userId) async {
-  CollectionReference collection = await FirebaseFirestore.instance
-      .collection("history")
-      .doc(userId)
-      .collection("historyItems");
-  var snapshots = await collection.get();
-  for (var doc in snapshots.docs) {
-    await doc.reference.delete();
-  }
+  // Add your function code here!
 }

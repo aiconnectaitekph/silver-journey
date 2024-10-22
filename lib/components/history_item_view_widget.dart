@@ -64,31 +64,35 @@ class _HistoryItemViewWidgetState extends State<HistoryItemViewWidget> {
               ),
             ],
           ),
-          child: ListTile(
-            title: Text(
-              widget.chat!.question,
-              style: FlutterFlowTheme.of(context).bodyLarge.override(
-                    fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
-                    fontSize: 16.0,
-                    letterSpacing: 0.0,
-                    fontWeight: FontWeight.w500,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).bodyLargeFamily),
-                  ),
+          child: Material(
+            color: Colors.transparent,
+            child: ListTile(
+              title: Text(
+                widget.chat!.question,
+                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                      fontSize: 16.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.w500,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).bodyLargeFamily),
+                    ),
+              ),
+              subtitle: Text(
+                (String var1) {
+                  return var1.length <= 60 ? var1 : var1.substring(0, 60);
+                }(widget.chat!.answer),
+                style: FlutterFlowTheme.of(context).labelMedium.override(
+                      fontFamily:
+                          FlutterFlowTheme.of(context).labelMediumFamily,
+                      letterSpacing: 0.0,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).labelMediumFamily),
+                    ),
+              ),
+              tileColor: Colors.transparent,
+              dense: true,
             ),
-            subtitle: Text(
-              (String var1) {
-                return var1.length <= 60 ? var1 : var1.substring(0, 60);
-              }(widget.chat!.answer),
-              style: FlutterFlowTheme.of(context).labelMedium.override(
-                    fontFamily: FlutterFlowTheme.of(context).labelMediumFamily,
-                    letterSpacing: 0.0,
-                    useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).labelMediumFamily),
-                  ),
-            ),
-            tileColor: Colors.transparent,
-            dense: true,
           ),
         ),
         Divider(

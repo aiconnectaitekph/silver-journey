@@ -13,7 +13,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '/backend/schema/structs/index.dart';
 import '/auth/firebase_auth/auth_util.dart';
 
-bool? checkValue(String? value) {
+bool checkValue(String? value) {
   return value != null && value.isNotEmpty;
 }
 

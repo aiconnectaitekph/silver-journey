@@ -147,7 +147,7 @@ class _ChatItemViewWidgetState extends State<ChatItemViewWidget>
               ),
               Builder(
                 builder: (context) {
-                  if (functions.checkValue(widget.chat?.answer) ?? false) {
+                  if (functions.checkValue(widget.chat?.answer)) {
                     return Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
