@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/components/page_bg_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -472,11 +473,6 @@ class _RegisterScreenWidgetState extends State<RegisterScreenWidget> {
                                 alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
-                                    if (_model.formKey.currentState == null ||
-                                        !_model.formKey.currentState!
-                                            .validate()) {
-                                      return;
-                                    }
                                     GoRouter.of(context).prepareAuthEvent();
                                     if (_model.passwordTextController.text !=
                                         _model.confirmPasswordTextController
@@ -502,13 +498,20 @@ class _RegisterScreenWidgetState extends State<RegisterScreenWidget> {
                                       return;
                                     }
 
+                                    await UsersRecord.collection
+                                        .doc(user.uid)
+                                        .update(createUsersRecordData(
+                                          apiKey:
+                                              '3066136e648dcd681bc7e18824ef95c4b77945e3eb07548c935dac913094db44',
+                                        ));
+
                                     context.goNamedAuth(
                                         'ChatScreen', context.mounted);
                                   },
                                   text: 'Register',
                                   options: FFButtonOptions(
                                     width: 172.0,
-                                    height: 40.0,
+                                    height: 48.0,
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(

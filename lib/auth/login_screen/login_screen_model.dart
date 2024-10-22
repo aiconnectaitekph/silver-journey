@@ -41,9 +41,6 @@ class LoginScreenModel extends FlutterFlowModel<LoginScreenWidget> {
     return null;
   }
 
-  // Stores action output result for [Validate Form] action in Button widget.
-  bool? usersauth;
-
   @override
   void initState(BuildContext context) {
     pageBgModel = createModel(context, () => PageBgModel());

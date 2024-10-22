@@ -243,38 +243,6 @@ class _SettingScreenWidgetState extends State<SettingScreenWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            context.pushNamed('APIKeyScreen');
-                          },
-                          child: ListTile(
-                            title: Text(
-                              'Change API Key',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                            ),
-                            tileColor: Colors.transparent,
-                            dense: true,
-                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                          ),
-                        ),
-                        InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {

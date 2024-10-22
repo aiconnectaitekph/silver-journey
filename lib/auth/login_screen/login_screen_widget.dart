@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/components/page_bg_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -313,12 +314,6 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              _model.usersauth = true;
-                              if (_model.formKey.currentState == null ||
-                                  !_model.formKey.currentState!.validate()) {
-                                safeSetState(() => _model.usersauth = false);
-                                return;
-                              }
                               GoRouter.of(context).prepareAuthEvent();
 
                               final user = await authManager.signInWithEmail(
@@ -330,15 +325,8 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                                 return;
                               }
 
-                              if (_model.usersauth == null) {
-                                context.pushNamedAuth(
-                                    'APIKeyScreen', context.mounted);
-                              } else {
-                                context.pushNamedAuth(
-                                    'ChatScreen', context.mounted);
-                              }
-
-                              safeSetState(() {});
+                              context.goNamedAuth(
+                                  'ChatScreen', context.mounted);
                             },
                             text: 'Log In',
                             options: FFButtonOptions(
@@ -443,20 +431,39 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                               ),
                               onPressed: () async {
                                 GoRouter.of(context).prepareAuthEvent();
+                                if (_model.passwordTextController.text !=
+                                    (_model.passwordFocusNode?.hasFocus ??
+                                            false)
+                                        .toString()) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text(
+                                        'Passwords don\'t match!',
+                                      ),
+                                    ),
+                                  );
+                                  return;
+                                }
+
                                 final user =
-                                    await authManager.signInWithGoogle(context);
+                                    await authManager.createAccountWithEmail(
+                                  context,
+                                  _model.emailAddressTextController.text,
+                                  _model.passwordTextController.text,
+                                );
                                 if (user == null) {
                                   return;
                                 }
-                                if (valueOrDefault(
-                                            currentUserDocument?.apiKey, '') ==
-                                        '') {
-                                  context.pushNamedAuth(
-                                      'APIKeyScreen', context.mounted);
-                                } else {
-                                  context.pushNamedAuth(
-                                      'ChatScreen', context.mounted);
-                                }
+
+                                await UsersRecord.collection
+                                    .doc(user.uid)
+                                    .update(createUsersRecordData(
+                                      apiKey:
+                                          '3066136e648dcd681bc7e18824ef95c4b77945e3eb07548c935dac913094db44',
+                                    ));
+
+                                context.goNamedAuth(
+                                    'ChatScreen', context.mounted);
                               },
                             ),
                             FlutterFlowIconButton(
